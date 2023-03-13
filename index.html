@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstap">
+    <meta name="author" content="Anderson Rodrigues">
+    <title>Portfólio</title>
+    <link rel="shortcut icon" href="assents/img/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <p class="logo">A<strong>R</strong></p>
+            </div>
+            <h1 class="logo-text">Port<strong>fólio</strong></h1>
+        </div>
+
+        <div class="menu-btn">
+            <img src="assets/img/menu.png" alt="menu bar" onclick="showMenu()">
+        </div>
+        
+        <nav>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#">HOME</a>
+            </div>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#about">SOBRE MIM</a>
+            </div>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#projects">PROJETOS</a>
+            </div>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#skills">CONHECIMENTOS</a>
+            </div>
+            <div class="underline-hover">
+                <a onclick="closeMenu()" href="#certification">CERTIFICADOS</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Home-->
+
+    <section class="home">
+        <main class="apresentation">
+            <h1>Olá, Eu me chamo <br>Anderson Rodrigues</h1>
+            <div class="home-info">
+                <p> Desenvolvedor Front<strong class="front">End</strong></p>
+            </div>
+
+            <div class="text-box">
+                <a href="#projects" class="btn-projetcs">Projetos</a>
+            </div>
+        </main>
+        <div class="contact-container">
+            <a class="mimic-contact" target="_blank" href="https://www.linkedin.com/in/anderson-rodrigues-34a7721a1/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a class="mimic-contact" target="_blank" href="https://github.com/andersonrs2605">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a class="mimic-contact" target="_blank" href="https://www.facebook.com/anderson.rodrigues.1232760">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a class="mimic-contact" target="_blank" href="https://www.instagram.com/andersonrodrigues859/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--About-->
+
+    <section id="about" data-aos="fade-right">
+        <div class="about-intro">
+            <div class="underline">
+                <h1>Sobre mim</h1>
+            </div>
+            <p>Um pouco sobre minha história e onde já estou.</p>
+        </div>
+
+        <div class="about-container">
+            <div class="about-info">
+                <h2>Quem eu sou?</h2>
+                <p>Olá! Me Anderson Rodrigues Da Silva, Sou nascido em maio de 1995, no Interior da Paraíba. Amante de tecnologia e inovação. Sou um Desenvolvedor
+                    <strong>Fullstack</strong> em formação. Moro em Campo Limpo Pta/SP. Atualmente sou <strong>Formado</strong> em Análise e Desenvolvimento de Sistemas e cursando Pós em desenvolvimento web fullsatck pela Faculdade Anhanguera.
+                </p>
+                <p>Meu objetivo é ingressar na área de tecnologia, em busca da minha <strong>Transição de Carreira</strong>.</p>
+                <a class="cv" target="_blank"
+                    href="https://1drv.ms/b/s!AoUlCis1NdLsuUX2EnhKlgCk3nLM">BAIXAR CV
+                    <i class="fa-solid fa-download"></i></a>
+
+            </div>
+            <div class="about-photo">
+                <img src="assets/img/myphoto.jpeg" alt="minha foto">
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+
+    <section id="projects" data-aos="fade-up">
+        <div class="underline">
+            <h1>Projetos</h1>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Faq</h2>
+                <p>Um faq onde os clientes podem solicitar suporte técnico específico para o SmartPhne.</p>
+                <div class="link-container">
+                    <a class="deploy" target="_blank"
+                        href="https://faqanderson.netlify.app">Visitar <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="repository" target="_blank"
+                        href="https://github.com/andersonrs2605/FAQ-SmartPhones"> <i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Gerador de Senhas</h2>
+                <p>Um gerador de senhas onde o solicitante pode escolher o tmanho de sua senha de 5 a 25 caracteres e o site gera um aleatória cada vez que clicar</p>
+                <div class="link-container">
+                    <a class="deploy" target="_blank" href="https://geradordesenhasanderson.netlify.app">Visitar <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="repository" target="_blank" href="https://github.com/andersonrs2605/Gerador-de-Senhas"> <i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Formulário Em react</h2>
+                <p>formulario com campos, nome, cidade, estado, país em reactJS</p>
+                <div class="link-container">
+                    <a class="deploy" target="_blank" href="https://github.com/andersonrs2605/Formulario-em-ReactJS">Visitar <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="repository" target="_blank" href="https://github.com/andersonrs2605/Formulario-em-ReactJS"> <i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>aplicação web em VueJS</h2>
+                <p>Projeto em fase de construção. em breve estará disponivel.</p>
+            </div>
+        </div>
+        <div class="github-link">
+            <a href="https://github.com/andersonrs2605" target="_blank">Ver mais <i
+                    class="fa-solid fa-angles-right"></i></a>
+        </div>
+
+    </section>
+
+    <!--Skills-->
+
+    <section id="skills" data-aos="fade-up">
+        <div class="underline">
+            <h1>Conhecimentos</h1>
+        </div>
+        <h2>SKILLS</h2>
+        <div class="skills-container">
+            <div class="grid-skills-container">
+                <div class="grid-skill html"><i class="fa-brands fa-html5 html"></i></div>
+                <div class="grid-skill css"><i class="fa-brands fa-css3-alt css"></i></div>
+                <div class="grid-skill js"><i class="fa-brands fa-js js"></i></div>
+                <div class="grid-skill react"><i class="fa-brands fa-react react"></i></div>
+                <div class="grid-skill git"><i class="fa-brands fa-git-alt git"></i></div>
+                <div class="grid-skill github"><i class="fa-brands fa-github github"></i></div>
+                <div class="grid-skill bs"><i class="fa-brands fa-bootstrap bs"></i></div>
+                <div class="grid-skill java"><i class="fa-brands fa-java java"></i></div>
+                <div class="grid-skill learning"><i class="fa-sharp fa-solid fa-book learning"></i></div>
+            </div>
+            <div class="skills-description">
+                <h3 class="skill-element-title"></h3>
+                <p class="element-description">*passe o cursor do mouse no card*</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--Certification-->
+
+    <section id="certification" data-aos="fade-up">
+        <div class="underline">
+            <h1>Certificados</h1>
+        </div>
+
+        <div class="certified-container">
+            <div class="certified-mimic">
+                <img class="certified-img img-center" src="assets/img/Formacao-ADS.jpg"
+                    alt="certificado de introdução a Python">
+            </div>
+            <div class="certified-mimic">
+                <img class="certified-img img-center" src="assets/img/introdução a Python.jpeg"
+                    alt="certificado de introdução a Python">
+            </div>
+            <div class="certified-mimic">
+                <img class="certified-img" src="assets/img/Estrutura de dados em Python.jpeg" alt="certificado de estrutura de dados em Python">
+            </div>
+            <div class="certified-mimic">
+                <img class="certified-img" src="assets/img/analise de dados com python.jpeg" alt="certificado de database">
+            </div>
+            <div class="certified-mimic">
+                <img class="certified-img" src="assets/img/Tecnologia da informação e comunicação.jpeg" alt="certificado de tecnologia da informação e comunicação">
+            </div>
+            <div class="popup-image">
+                <span onclick="closePopup()">&times;</span>
+                <img src="assets/img/Estrutura de dados em Python.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+<!--popup image-->
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <p>&copy; 2022 - Developed by Anderson Rodrigues</p>
+        <div class="footer-social">
+            <a class="icon-footer-link" target="_blank" href="https://www.linkedin.com/in/anderson-rodrigues-34a7721a1/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="icon-footer-link" target="_blank" href="https://github.com/andersonrs2605">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="icon-footer-link" target="_blank" href="https://www.facebook.com/anderson.rodrigues.1232760">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="icon-footer-link" target="_blank" href="https://www.instagram.com/andersonrodrigues859/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+    <!--scripts-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script src="assets/script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+</body>
+</html>
